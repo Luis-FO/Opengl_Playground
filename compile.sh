@@ -1,0 +1,1 @@
+g++ -o Clock_Animation Clock_Animation.cpp Shapes.cpp -lGL -lGLU -lglut
