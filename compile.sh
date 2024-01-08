@@ -1,1 +1,1 @@
-g++ -o Clock_Animation Clock_Animation.cpp Shapes.cpp -lGL -lGLU -lglut
+g++ -o Circle_falling Circle_falling.cpp Shared/Shapes.cpp -lGL -lGLU -lglut
