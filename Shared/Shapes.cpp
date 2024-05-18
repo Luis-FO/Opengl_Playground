@@ -70,3 +70,27 @@ void drawText(const char *text, float x, float y) {
         glutBitmapCharacter(GLUT_BITMAP_HELVETICA_12, *c);
     }
 }
+
+void drawGrid(float xEdgeDistanceFromCenter, float yEdgeDistanceFromCenter, float spacing){
+    glBegin(GL_LINES);
+    glColor3f(0.5, 0.5, 0.5);
+
+    int num_h_lines = xEdgeDistanceFromCenter/spacing;
+    int num_v_lines = yEdgeDistanceFromCenter/spacing;
+    
+    float offset_x =  xEdgeDistanceFromCenter - num_v_lines*spacing;
+    float offset_y = yEdgeDistanceFromCenter - num_h_lines*spacing;
+    
+    //Draw vertical Lines
+    for(float x = -1; x+offset_x <=1; x+=spacing){
+        glVertex2f(x+offset_x, -1);
+        glVertex2f(x+offset_x, 1);
+    }
+
+    //Draw Horizontal Lines
+    for(float y = -1; y+offset_y<=1;y+=spacing){
+        glVertex2f(-1, y+offset_y);
+        glVertex2f(1, y+offset_y);
+    }
+    glEnd();
+}

@@ -3,7 +3,7 @@
 #include <cmath>
 #include <iostream>
 
-float x = 0.1, y = 0.1;
+float x = 0.0, y = 0.1;
 float FPS = 1000/200;
 bool isMovingUpward = false;
 
@@ -39,8 +39,9 @@ void display() {
     glClear(GL_COLOR_BUFFER_BIT);
     
     glLoadIdentity(); // Reinicia a matriz de transformação
-    // Desenha o círculo
+    drawGrid(1.0, 1.0, 0.5);
     float radius = 0.1;
+    // Desenha o círculo
     drawCircle(x, y, radius);
     glFlush(); // Força o processamento dos comandos OpenGL
 }
