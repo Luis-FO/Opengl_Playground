@@ -1,4 +1,4 @@
-TARGET = meu_programa
+TARGET = RotatingSquare
 
 SRC_DIR = src
 INC_DIR = include
