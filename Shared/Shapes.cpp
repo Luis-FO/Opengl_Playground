@@ -27,13 +27,13 @@ void drawArrow(float startX, float startY, float endX, float endY) {
     glEnd();
 }
 
-void drawSquare() {
+void drawSquare(float x0, float y0, float size) {
     glBegin(GL_QUADS);
     glColor3f(1.0, 0.0, 0.0);
-    glVertex2f(-0.5, -0.5); 
-    glVertex2f(0.5, -0.5);  
-    glVertex2f(0.5, 0.5);   
-    glVertex2f(-0.5, 0.5);
+    glVertex2f(x0, y0); 
+    glVertex2f(x0+size, y0);  
+    glVertex2f(x0+size, y0+size);   
+    glVertex2f(x0, y0+size);
     glEnd();
 }
 
