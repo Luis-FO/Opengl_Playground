@@ -1,1 +1,1 @@
-g++ -o Circle_falling Circle_falling.cpp Shared/Shapes.cpp -lGL -lGLU -lglut
+g++ -o DrawGrid DrawGrid.cpp Shared/Shapes.cpp -lGL -lGLU -lglut
