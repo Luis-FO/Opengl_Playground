@@ -1,4 +1,4 @@
-#include "Shared/Shapes.hpp"
+#include "../include/Shapes.hpp"
 #include <GL/glut.h>
 #include <cmath>
 #include <iostream>
