@@ -4,6 +4,7 @@
 
 void drawArrow(float startX, float startY, float endX, float endY);
 void drawSquare(float x0, float y0, float size);
+void drawRect(float x0, float y0, float width, float height);
 void drawCircle(float centerX, float centerY, float radius);
 void drawLines(float startX, float startY, float  endX, float endY/*, float thickness*/);
 void drawText(const char *text, float x, float y);

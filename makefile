@@ -1,6 +1,6 @@
-TARGET = RotatingSquare
+TARGET = fios
 
-SRC_DIR = src
+SRC_DIR = src2
 INC_DIR = include
 OBJ_DIR = obj
 
@@ -8,7 +8,7 @@ CXX = g++
 CXXFLAGS = -std=c++17 -I $(INC_DIR) -Wall
 
 LIBS = -lGL -lGLU -lglut
-
+#LIBS = -lglfw -lGLEW -lGL -lm
 SRCS = $(wildcard $(SRC_DIR)/*.cpp)
 # src/RotatingSquare.cpp src/Shapes.cpp
 
